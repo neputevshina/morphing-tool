@@ -7,6 +7,7 @@
 #X obj 104 179 *~, f 5;
 #X obj 48 179 *~, f 5;
 #X obj 104 35 inlet~;
+#X obj 226 35 loadbang;
 #X connect 0 0 6 0;
 #X connect 2 0 3 0;
 #X connect 2 0 4 0;
@@ -15,3 +16,4 @@
 #X connect 5 0 1 0;
 #X connect 6 0 1 0;
 #X connect 7 0 5 0;
+#X connect 8 0 3 0;
