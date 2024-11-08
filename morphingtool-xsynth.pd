@@ -7,8 +7,8 @@
 #X obj 41 138 /~, f 6;
 #X obj 41 13 inlet~, f 7;
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array w\$0 2048 float 2;
-#X coords 0 1 2048 -1 200 140 1;
+#X array w\$0 1024 float 2;
+#X coords 0 1 1024 -1 200 140 1;
 #X restore 478 1313 graph;
 #X obj 285 1217 until;
 #X obj 285 1365 avg;
@@ -40,8 +40,8 @@
 #X obj 285 1291 tabread w\$0;
 #X obj 720 1210 \$0;
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array b\$0 1024 float 2;
-#X coords 0 1 1024 -1 200 140 1;
+#X array b\$0 512 float 2;
+#X coords 0 1 512 -1 200 140 1;
 #X restore 478 1487 graph;
 #X obj 199 173 rfft~, f 11;
 #X obj 96 439 *~;
@@ -187,8 +187,8 @@
 #X connect 28 0 29 0;
 #X restore 41 1392 pd calc-bandpass;
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array pink\$0 1024 float 2;
-#X coords 0 1 1024 -1 200 140 1;
+#X array pink\$0 512 float 2;
+#X coords 0 1 512 -1 200 140 1;
 #X restore 478 1658 graph;
 #N canvas 733 172 450 300 calc-pink 0;
 #X obj 120 111 until;
@@ -215,7 +215,7 @@
 #X connect 6 0 8 0;
 #X restore 41 1420 pd calc-pink;
 #X msg 696 1276 \; w\$2 resize \$1 \; b\$2 resize \$3 \; pink\$2 resize \$3;
-#N canvas 0 50 450 300 noiser 1;
+#N canvas 0 50 450 300 noiser 0;
 #X obj 84 358 *~, f 6;
 #X obj 106 329 tabreceive~ pink\$0;
 #X obj 84 289 noise~;
