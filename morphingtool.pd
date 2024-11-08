@@ -17,8 +17,8 @@
 #X obj 420 1022 loadbang;
 #X obj 420 1118 plugin_latency;
 #X obj 420 1053 1024;
-#X obj 17 31 hsl 128 17 -1 1 0 1 a empty empty -2 -8 0 10 #e4c417 #4d4d4d #373737 6350 1;
-#X obj 17 77 hsl 128 17 -1 1 0 1 p empty empty -2 -8 0 10 #e4c417 #4d4d4d #373737 6350 1;
+#X obj 17 31 hsl 128 17 -1 1 0 1 a empty empty -2 -8 0 10 #e4c417 #4d4d4d #373737 12700 1;
+#X obj 17 77 hsl 128 17 -1 1 0 1 p empty empty -2 -8 0 10 #e4c417 #4d4d4d #373737 12700 1;
 #X obj 273 650 r a, f 4;
 #X obj 313 650 r p, f 4;
 #X obj 242 854 delay~ 512 512;
@@ -154,7 +154,7 @@
 #X connect 15 0 12 0;
 #X restore 242 1008 pd stom;
 #X f 17;
-#X obj 230 30 tgl 25 1 mr empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737 1 1;
+#X obj 230 30 tgl 25 1 mr empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737 0 1;
 #X text 260 25 Steal pitch;
 #X text 260 41 (side->front only);
 #X obj 8 777 morphingtool-xsynth 1024 0 16, f 20;
@@ -184,7 +184,7 @@
 #X obj 102 7 0;
 #X obj 436 650 r dc;
 #X obj 879 727 r dc;
-#X obj 238 257 hsl 128 17 0 10 0 1 dc empty empty -2 -8 0 10 #e4c41e #4d4d4d #373737 0 1;
+#X obj 238 257 hsl 128 17 0 20 0 1 dc empty empty -2 -8 0 10 #e4c41e #4d4d4d #373737 3791 1;
 #X text 231 272 Time blur;
 #X obj 369 257 param TimeBlur;
 #X connect 1 0 41 0;
@@ -273,8 +273,10 @@
 #X connect 63 0 19 0;
 #X connect 64 0 30 0;
 #X connect 64 0 42 0;
+#X connect 64 0 45 0;
 #X connect 64 1 30 0;
 #X connect 64 1 42 0;
+#X connect 64 1 45 0;
 #X connect 71 0 72 0;
 #X connect 72 0 61 0;
 #X connect 73 0 48 5;
