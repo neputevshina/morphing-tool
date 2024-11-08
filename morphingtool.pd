@@ -184,9 +184,15 @@
 #X obj 102 7 0;
 #X obj 436 650 r dc;
 #X obj 879 727 r dc;
-#X obj 238 257 hsl 128 17 0 20 0 1 dc empty empty -2 -8 0 10 #e4c41e #4d4d4d #373737 3791 1;
+#X obj 238 257 hsl 128 17 0 20 0 1 dc empty empty -2 -8 0 10 #e4c41e #4d4d4d #373737 0 1;
 #X text 231 272 Time blur;
 #X obj 369 257 param TimeBlur;
+#X obj 420 366 bng 25 250 50 0 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737;
+#X floatatom 420 479 5 0 0 0 - - - 12;
+#X obj 420 453 expr max(1 \, floor($f1/48000))*$f2;
+#X obj 420 398 t b b;
+#X obj 608 427 256;
+#X obj 420 427 8000;
 #X connect 1 0 41 0;
 #X connect 1 1 41 1;
 #X connect 1 2 41 2;
@@ -285,3 +291,9 @@
 #X connect 74 0 51 5;
 #X connect 75 0 77 0;
 #X connect 77 0 75 0;
+#X connect 78 0 81 0;
+#X connect 80 0 79 0;
+#X connect 81 0 83 0;
+#X connect 81 1 82 0;
+#X connect 82 0 80 1;
+#X connect 83 0 80 0;
