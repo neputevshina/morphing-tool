@@ -7,8 +7,8 @@
 #X obj 41 138 /~, f 6;
 #X obj 41 13 inlet~, f 7;
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array w\$0 1024 float 2;
-#X coords 0 1 1024 -1 200 140 1;
+#X array w\$0 256 float 2;
+#X coords 0 1 256 -1 200 140 1;
 #X restore 478 1313 graph;
 #X obj 285 1217 until;
 #X obj 285 1365 avg;
@@ -40,8 +40,8 @@
 #X obj 285 1291 tabread w\$0;
 #X obj 720 1210 \$0;
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array b\$0 512 float 2;
-#X coords 0 1 512 -1 200 140 1;
+#X array b\$0 128 float 2;
+#X coords 0 1 128 -1 200 140 1;
 #X restore 478 1487 graph;
 #X obj 199 173 rfft~, f 11;
 #X obj 96 489 *~;
@@ -77,7 +77,7 @@
 #X obj 787 352 array define rpsr\$0;
 #X obj 318 601 tabsend~ lpsr\$0 rpsr\$0;
 #X obj 818 53 inlet;
-#X obj 818 79 s decay\$0;
+#X obj 897 257 s decay\$0;
 #X obj 479 325 r decay\$0;
 #N canvas 0 50 450 300 expdecay 0;
 #X obj 71 203 expdecay$;
@@ -179,8 +179,8 @@
 #X connect 28 0 29 0;
 #X restore 41 1392 pd calc-bandpass;
 #N canvas 0 0 450 250 (subpatch) 0;
-#X array pink\$0 512 float 2;
-#X coords 0 1 512 -1 200 140 1;
+#X array pink\$0 128 float 2;
+#X coords 0 1 128 -1 200 140 1;
 #X restore 478 1658 graph;
 #N canvas 733 172 450 300 calc-pink 0;
 #X obj 120 111 until;
@@ -286,6 +286,10 @@
 #X obj 652 79 s xfp\$0;
 #X obj 711 79 s xfa\$0;
 #X obj 304 299 r xfa\$0;
+#X obj 897 224 xlerp;
+#X obj 897 169 0;
+#X obj 911 191 20;
+#X obj 897 123 loadbang;
 #X connect 1 0 5 0;
 #X connect 2 0 100 0;
 #X connect 2 1 100 1;
@@ -355,7 +359,7 @@
 #X connect 66 2 23 0;
 #X connect 66 2 28 1;
 #X connect 66 3 55 0;
-#X connect 70 0 71 0;
+#X connect 70 0 107 2;
 #X connect 72 0 73 2;
 #X connect 73 0 88 0;
 #X connect 73 0 69 0;
@@ -397,3 +401,8 @@
 #X connect 102 0 52 2;
 #X connect 103 0 51 2;
 #X connect 106 0 60 2;
+#X connect 107 0 71 0;
+#X connect 108 0 107 0;
+#X connect 109 0 107 1;
+#X connect 110 0 108 0;
+#X connect 110 0 109 0;
