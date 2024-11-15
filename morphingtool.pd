@@ -179,7 +179,7 @@
 #X obj 182 688 r dirt, f 7;
 #X obj 8 712 morphingtool-bimonox, f 34;
 #X text 169 205 Dirt (side->front only);
-#X obj 18 228 tgl 17 1 freeze ifreeze empty 17 7 0 10 #e4c41e #4d4d4d #373737 0 1;
+#X obj 18 228 tgl 17 1 freeze ifreeze empty 17 7 0 10 #e4c41e #4d4d4d #373737 1 1;
 #X text 59 226 Freeze;
 #X obj 603 800 r freeze;
 #X obj 875 845 r freeze;
@@ -243,10 +243,10 @@
 #X obj -54 161 s ip;
 #X obj -585 432 r freeze;
 #X obj -585 485 s ifreeze;
-#X obj -230 471 s ifreeze;
+#X obj -230 521 s ifreeze;
 #X obj -230 293 r fradv;
-#X obj -189 417 s freeze;
-#X msg -230 443 set \$1;
+#X obj -189 467 s freeze;
+#X msg -230 493 set \$1;
 #X obj 292 382 r ms;
 #X obj 339 1102 r ms;
 #X obj -585 33 defparam AToB float -1 1;
@@ -254,7 +254,8 @@
 #X obj -585 207 defparam TimeBlur float -1 1;
 #X obj -585 292 defparam PhaseNoise float -1 1;
 #X obj -585 376 defparam Dirt float 0 1;
-#X obj -585 458 defparam Freeze float -1 1;
+#X obj -230 402 t f f;
+#X obj -585 458 defparam Freeze float 0 2;
 #X connect 2 0 86 0;
 #X connect 2 1 86 1;
 #X connect 2 2 86 2;
@@ -342,8 +343,7 @@
 #X connect 79 0 49 7;
 #X connect 81 0 84 0;
 #X connect 81 1 83 0;
-#X connect 82 0 119 0;
-#X connect 82 0 120 0;
+#X connect 82 0 128 0;
 #X connect 83 0 119 0;
 #X connect 84 0 82 0;
 #X connect 85 0 86 4;
@@ -373,7 +373,6 @@
 #X connect 108 0 106 2;
 #X connect 111 0 94 0;
 #X connect 112 0 94 2;
-#X connect 115 0 128 0;
 #X connect 118 0 81 0;
 #X connect 120 0 117 0;
 #X connect 121 0 39 4;
@@ -383,4 +382,5 @@
 #X connect 125 0 101 0;
 #X connect 126 0 103 0;
 #X connect 127 0 105 0;
-#X connect 128 0 116 0;
+#X connect 128 0 119 0;
+#X connect 128 1 120 0;
