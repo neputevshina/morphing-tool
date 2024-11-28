@@ -48,8 +48,8 @@
 #X obj 116 1252 r~ orig;
 #X obj 116 1278 snake_out~;
 #X obj -106 687 s~ orig 2;
-#X obj 16 51 hsl 128 17 0.001 2000 1 1 rls empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 2622 1;
-#X obj 16 12 hsl 128 17 1e-06 10000 1 1 attk empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 6350 1;
+#X obj 16 51 hsl 128 17 0.001 2000 1 1 rls empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 12700 1;
+#X obj 16 12 hsl 128 17 1e-06 10000 1 1 attk empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 12700 1;
 #X obj 143 876 /~;
 #X obj 410 819 *;
 #X obj 325 869 *;
@@ -234,7 +234,7 @@
 #X obj 457 1025 s amt-out;
 #X obj 131 950 *~;
 #X obj 119 839 sigs~ 1 1;
-#X obj 16 90 hsl 128 17 0 120 0 1 rng empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 2654 1;
+#X obj 16 90 hsl 128 17 0 120 0 1 rng empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 0 1;
 #X listbox 153 90 8 0 0 0 - rng-out - 12;
 #X text 9 104 Range;
 #X obj 143 918 min~;
@@ -248,7 +248,7 @@
 #X obj -11 -20 2000;
 #X obj -89 145 0.9;
 #X obj -80 10 1500;
-#X obj 481 14 vsl 17 128 -120 0 0 1 mkup empty empty 0 -9 0 10 #e4e4e4 #4d4d4d #373737 9842 1;
+#X obj 481 14 vsl 17 128 -120 0 0 1 mkup empty empty 0 -9 0 10 #e4e4e4 #4d4d4d #373737 12700 1;
 #X obj 264 1032 dbtoa;
 #X listbox 461 149 8 0 0 0 - mkup - 12;
 #X obj 264 1008 r mkup;
@@ -333,7 +333,7 @@
 #X obj 477 -26 f;
 #X obj -24 687 process;
 #X obj 255 721 process;
-#X obj 227 198 vradio 20 1 1 4 lpon empty empty 0 -8 0 10 #e4e4e4 #4d4d4d #373737 1;
+#X obj 227 198 vradio 20 1 1 4 lpon empty empty 0 -8 0 10 #e4e4e4 #4d4d4d #373737 3;
 #X text 224 175 Envelope;
 #X text 352 292 Neputevshina's Normalizer, f 23;
 #X text 252 238 IIR Hilbert;
@@ -344,7 +344,7 @@
 #X obj 598 1362 expr -$f1;
 #X obj 696 1394 array set top 1;
 #X obj 346 925 array set rngr 1;
-#X obj 227 294 tgl 20 1 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737 1 1;
+#X obj 227 294 tgl 20 1 empty empty empty 17 7 0 10 #e4e4e4 #4d4d4d #373737 0 1;
 #X text 252 292 Sidechain;
 #X obj 227 321 + 1;
 #X obj -24 418 adc~ 1 2 3 4, f 23;
@@ -366,7 +366,7 @@
 #X obj 747 1254 1000;
 #X obj 689 1263 t f b;
 #X obj 707 1305 min;
-#X obj 16 129 hsl 128 17 0 120 0 1 clip empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 2748 1;
+#X obj 16 129 hsl 128 17 0 120 0 1 clip empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 1043 1;
 #X listbox 153 129 8 0 0 0 - clip-out - 12;
 #X text 9 143 Clip;
 #X obj 264 900 r clip;
