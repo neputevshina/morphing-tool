@@ -234,7 +234,7 @@
 #X obj 457 1025 s amt-out;
 #X obj 131 950 *~;
 #X obj 119 839 sigs~ 1 1;
-#X obj 16 90 hsl 128 17 0 120 0 1 rng empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 3601 1;
+#X obj 16 90 hsl 128 17 0 120 0 1 rng empty empty -2 -8 0 10 #e4e4e4 #4d4d4d #373737 3506 1;
 #X listbox 153 90 8 0 0 0 - rng-out - 12;
 #X text 9 104 Range;
 #X obj 143 918 min~;
@@ -248,7 +248,7 @@
 #X obj -11 -20 2000;
 #X obj -89 145 0.9;
 #X obj -80 10 1500;
-#X obj 481 14 vsl 17 128 -120 0 0 1 mkup empty empty 0 -9 0 10 #e4e4e4 #4d4d4d #373737 11170 1;
+#X obj 481 14 vsl 17 128 -120 0 0 1 mkup empty empty 0 -9 0 10 #e4e4e4 #4d4d4d #373737 10272 1;
 #X obj 264 1032 dbtoa;
 #X listbox 461 149 8 0 0 0 - mkup - 12;
 #X obj 264 1008 r mkup;
@@ -310,7 +310,7 @@
 #X connect 4 0 2 0;
 #X connect 5 0 2 1;
 #X restore -144 885 pd dbtoa;
-#X obj 131 1014 *~;
+#X obj 131 1016 *~;
 #X obj 273 1112 -~;
 #X listbox 229 114 9 0 0 0 - mgr - 0;
 #X obj 436 1176 array sum grl;
