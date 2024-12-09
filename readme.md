@@ -26,6 +26,8 @@ Simple multiresolution cross-synthesizer.
   - **Octave**. Shift the octave of detected pitches of modulator.
 
 ## Normalizer
+
 Pumping maximizer. A compressor without threshold and ratio.
+
 ![screenshot](./normalizer/screenshot.png)
 
